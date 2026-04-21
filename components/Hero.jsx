@@ -36,7 +36,7 @@ export default function Hero() {
         duration: 2.2,
         ease: [0.22, 1, 0.36, 1],
       }}
-      className="relative h-screen w-full overflow-hidden"
+      className="relative  w-full "
     >
       
       {/* Background Image */}
@@ -52,7 +52,7 @@ export default function Hero() {
       </div>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/30" />
+      <div className="absolute inset-0 bg-linear-to-b from-black/40 to-black/30" />
 
       {/* Content */}
       <motion.div

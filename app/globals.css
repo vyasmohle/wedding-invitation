@@ -5,12 +5,12 @@
   --foreground: #000000; /* black text */
 }
 
-@theme inline {
+/* @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
+} */
 
 /* ❌ dark mode hata diya */
 /*
@@ -46,4 +46,8 @@ body {
 
 html, body {
   overflow: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
 }

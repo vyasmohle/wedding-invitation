@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
       </head>
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col overflow-auto">
         <SmoothScroll>
           <audio id="bg-music" src="/music/audio.mp3" loop />
 

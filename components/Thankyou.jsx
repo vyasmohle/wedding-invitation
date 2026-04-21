@@ -79,7 +79,7 @@ export default function ThankYou() {
           initial={{ opacity: 0, x: -60 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.4 }}
-          className="w-16 h-[1px] bg-[#fcb750] mx-auto my-6"
+          className="w-16 h-2 bg-[#fcb750] mx-auto my-6"
         />
 
         {/* Message */}
