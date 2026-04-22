@@ -128,7 +128,7 @@ export default function Loader({ onComplete }) {
         {/* FRONT CARD */}
         {!open && (
           <div className="absolute inset-0 rounded-xl overflow-hidden shadow-2xl z-20">
-            <img src="/images/p1.jpg" className="w-full h-full object-cover" />
+            <img src="/images/p1.png" className="w-full h-full object-cover" />
 
             {/* CENTER BUTTON */}
             <div className="absolute inset-0 flex items-center justify-center bg-black/30">
@@ -161,7 +161,7 @@ export default function Loader({ onComplete }) {
           className="absolute w-full h-full origin-left rounded-xl overflow-hidden shadow-lg"
           style={{ backfaceVisibility: "hidden" }}
         >
-          <img src="/images/p2.jpg" className="w-full h-full object-cover" />
+          <img src="/images/p2.png" className="w-full h-full object-cover" />
         </motion.div>
 
         {/* RIGHT FLAP */}
@@ -171,7 +171,7 @@ export default function Loader({ onComplete }) {
           className="absolute w-full h-full origin-right rounded-xl overflow-hidden shadow-lg"
           style={{ backfaceVisibility: "hidden" }}
         >
-          <img src="/images/p3.jpg" className="w-full h-full object-cover" />
+          <img src="/images/p3.png" className="w-full h-full object-cover" />
         </motion.div>
 
         {/* INNER CARD */}
