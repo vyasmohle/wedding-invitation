@@ -97,7 +97,7 @@ export default function Invitation() {
         </motion.p>
 
         <motion.h2 variants={item} className="mt-6 text-3xl md:text-5xl font-serif text-[#ffddaa] italic">
-          Akash
+          Aakash
         </motion.h2>
 
         <motion.p variants={item} className="text-xl md:text-2xl my-2 text-[#fcb750]">

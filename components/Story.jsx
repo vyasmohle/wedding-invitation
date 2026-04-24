@@ -62,7 +62,7 @@ export default function Story() {
           }}
           className="text-2xl md:text-3xl font-serif italic text-[#fcb750]"
         >
-          Akash & Prerna
+          Aakash & Prerna
         </motion.h2>
 
         {/* 🔥 Paragraph (word-by-word animation) */}

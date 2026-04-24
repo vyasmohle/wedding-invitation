@@ -9,7 +9,7 @@ export default function Hero() {
 
   const [display, setDisplay] = useState("");
   const [erasing, setErasing] = useState(false);
-  const fullText = "Akash & Prerna";
+  const fullText = "Aakash & Prerna";
   const speed = 120;
   const eraseSpeed = 60;
   const pause = 900;
@@ -90,7 +90,7 @@ export default function Hero() {
         <motion.img
           variants={item}
           src="/images/couple-hero.jpeg"
-          alt="Akash & Prerna"
+          alt="Aakash & Prerna"
           className="w-72 h-150 md:w-110 md:h-170 object-cover rounded-2xl shadow-xl mb-2"
         />
 

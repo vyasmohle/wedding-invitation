@@ -83,7 +83,7 @@ export default function ThankYou() {
           variants={item}
           className="text-[#ffddaa] mt-1"
         >
-          Akash & Prerna
+          Aakash & Prerna
         </motion.p>
 
       </motion.div>
