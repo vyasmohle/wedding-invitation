@@ -8,23 +8,35 @@ const people = [
   {
     name: "Mr. Rajesh Sonkar",
     role: "Groom’s Father",
-    img: "/images/ppl.png",
+    img: "/images/papa.png",
   },
   {
     name: "Mrs. Bindu Sonkar",
     role: "Groom’s Mother",
-    img: "/images/ppl.png",
+    img: "/images/maa.png",
   },
   {
-    name: "Mr. Vijendra Purabiya",
-    role: "Bride’s Father",
-    img: "/images/ppl.png",
+    name: "Mr. Suresh Sonkar",
+    role: "Groom’s Elder Uncle",
+    img: "/images/suresh.jpeg",
   },
   {
-    name: "Mrs. .....",
-    role: "Bride’s Mother",
-    img: "/images/ppl.png",
+    name: "Mrs. Dharna Sonkar",
+    role: "Groom’s Elder Aunt",
+    img: "/images/dharna.jpeg",
   },
+
+  {
+    name: "Mr. Manoj Sonkar",
+    role: "Groom’s Uncle",
+    img: "/images/manoj.jpeg",
+  },
+  {
+    name: "Mrs. Bharti Sonkar",
+    role: "Groom’s Aunt",
+    img: "/images/bharti1.png",
+  },
+  
 ];
 
 export default function People() {
@@ -100,41 +112,42 @@ export default function People() {
         </motion.p>
 
         {/* Grid */}
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 max-w-5xl mx-auto">
 
-          {people.map((person, index) => (
-            <motion.div
-              key={index}
-              variants={item}
-              className="flex flex-col items-center group"
-            >
+        
+       <div className="mt-12 flex flex-wrap justify-center gap-10 max-w-5xl mx-auto">
+  {people.map((person, index) => (
+    <motion.div
+      key={index}
+      variants={item}
+      /* Yahan width set karni hogi taki ek row mein 4 items ka structure bane */
+      className="flex flex-col items-center group w-full sm:w-[calc(50%-2.5rem)] md:w-[calc(25%-2.5rem)]"
+    >
+      {/* Avatar */}
+      <motion.div
+        whileHover={{ scale: 1.1 }}
+        className="w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden shadow-lg"
+      >
+        <img
+          src={person.img}
+          alt={person.name}
+          className="w-full h-full object-cover"
+        />
+      </motion.div>
 
-              {/* Avatar */}
-              <motion.div
-                whileHover={{ scale: 1.1 }}
-                className="w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden shadow-lg"
-              >
-                <img
-                  src={person.img}
-                  alt={person.name}
-                  className="w-full h-full object-cover"
-                />
-              </motion.div>
+      {/* Name */}
+      <h3 className="mt-4 text-lg font-medium text-[#fcb750] group-hover:scale-105 transition">
+        {person.name}
+      </h3>
 
-              {/* Name */}
-              <h3 className="mt-4 text-lg font-medium text-[#fcb750] group-hover:scale-105 transition">
-                {person.name}
-              </h3>
+      {/* Role */}
+      <p className="text-sm text-[#ffddaa] italic">
+        {person.role}
+      </p>
+    </motion.div>
+  ))}
+</div>
 
-              {/* Role */}
-              <p className="text-sm text-[#ffddaa] italic">
-                {person.role}
-              </p>
 
-            </motion.div>
-          ))}
-
-        </div>
 
       </motion.div>
     </section>

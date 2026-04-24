@@ -130,7 +130,7 @@ export default function Hero() {
         <motion.div variants={item} className="flex flex-col items-center gap-2 mt-4">
 
           <p className="text-xl md:text-2xl font-semibold text-[#ffddaa] font-serif tracking-wide">
-            April 28, 2026
+            April 29, 2026
           </p>
 
           <p className="text-lg md:text-xl font-serif text-[#fcb750]">
